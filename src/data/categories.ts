@@ -1,0 +1,58 @@
+import { Category } from '../types/store';
+
+export const CATEGORIES: Category[] = [
+  {
+    id: 'spices',
+    name: 'মসলা',
+    englishName: 'Spices',
+    description: 'বাছাইকৃত কাঁচামাল থেকে যত্নসহকারে প্রস্তুত ৫ ধরনের খাঁটি গুঁড়া ও আস্ত মসলা।',
+    subcategories: ['মরিচ গুঁড়া', 'ধনিয়া গুঁড়া', 'হলুদ গুঁড়া', '১৬ ফোড়ন', 'জিরা গুঁড়া'],
+    image: '/src/assets/images/category_spice_assortment_1794987084011.jpg',
+    displayOrder: 1,
+  },
+  {
+    id: 'rice',
+    name: 'লাল চাল',
+    englishName: 'Red Rice',
+    description: 'প্রাকৃতিক আবরণ ও পুষ্টিগুণ বজায় রাখা পলিশবিহীন ঐতিহ্যবাহী লাল চাল।',
+    subcategories: ['ঢেঁকিছাঁটা ধাঁচের লাল চাল', 'ঘরোয়া ভাতের চাল'],
+    image: '/src/assets/images/product_red_rice_1794986265904.jpg',
+    displayOrder: 2,
+  },
+  {
+    id: 'oil',
+    name: 'ঘানিভাঙা সরিষার তেল',
+    englishName: 'Ghani Mustard Oil',
+    description: 'কাঠের ঘানিতে কম তাপমাত্রায় ভাঙানো খাঁটি ও প্রাকৃতিক ঝাঁঝালো সরিষার তেল।',
+    subcategories: ['খাঁটি সরিষার তেল', 'ভর্তা ও রান্নার তেল'],
+    image: '/src/assets/images/product_mustard_oil_1794986265892.jpg',
+    displayOrder: 3,
+  },
+  {
+    id: 'flour-grains',
+    name: 'লাল আটা',
+    englishName: 'Whole Red Atta',
+    description: 'তুষ ও ভ্রূণসহ সম্পূর্ণ দেশি লাল গম থেকে চাকি ভাঙা পুষ্টিকর আটা।',
+    subcategories: ['তুষসহ লাল আটা', 'রুটি ও পরাটার আটা'],
+    image: '/src/assets/images/product_red_atta_1794986264672.jpg',
+    displayOrder: 4,
+  },
+  {
+    id: 'dates',
+    name: 'খেজুর',
+    englishName: 'Natural Dates',
+    description: 'বাড়তি চিনি বা সিরাপমুক্ত বাছাইকৃত নরম, রসালো ও প্রাকৃতিক খেজুর।',
+    subcategories: ['নরম ও রসালো খেজুর', 'পারিবারিক প্যাক'],
+    image: '/src/assets/images/product_natural_dates_1794986265693.jpg',
+    displayOrder: 5,
+  },
+  {
+    id: 'natural-foods',
+    name: 'অন্যান্য প্রাকৃতিক খাদ্যপণ্য',
+    englishName: 'Other Natural Foods',
+    description: 'পরিবারের প্রতিদিনের রান্নাঘরের জন্য বাছাইকৃত প্রাকৃতিক খাদ্যপণ্য।',
+    subcategories: ['প্রাকৃতিক মধু ও গুড়', 'কালোজিরা ও মৌসুমি পণ্য'],
+    image: '/src/assets/images/category_natural_pantry_1794987085721.jpg',
+    displayOrder: 6,
+  },
+];

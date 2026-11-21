@@ -1,0 +1,6 @@
+{
+  "name": "RIBAZ — রান্নায় শুদ্ধতা",
+  "description": "রিবাজ (RIBAZ) — খাঁটি মসলা ও প্রাকৃতিক খাদ্যপণ্যের প্রিমিয়াম বাংলাদেশি অনলাইন শপ। রান্নায় শুদ্ধতা।",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
