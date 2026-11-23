@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import ribazLogo from '../assets/images/ribaz-logo.png';
 import { Menu, Search, ShoppingBag, X } from 'lucide-react';
 import { useCart } from '../context/CartContext';
 import { toBengaliNumber } from '../utils/formatters';
@@ -54,9 +55,10 @@ export function Navbar({
                 e.preventDefault();
                 onNavigateHome();
               }}
-              className="font-serif text-xl sm:text-2xl font-bold tracking-tight text-[#153A2B] whitespace-nowrap shrink-0 focus-visible:outline-2 focus-visible:outline-[#153A2B]"
+              className="flex items-center shrink-0 focus-visible:outline-2 focus-visible:outline-[#153A2B]"
+              aria-label="RIBAZ - রান্নায় শুদ্ধতা"
             >
-              RIBAZ <span className="font-normal text-[#5E432C]">রিবাজ</span>
+              <img src={ribazLogo} alt="RIBAZ - রান্নায় শুদ্ধতা" className="h-10 sm:h-12 w-auto object-contain" />
             </a>
           </div>
 
@@ -182,10 +184,8 @@ export function Navbar({
           />
           <aside className="relative z-10 w-[82%] max-w-[320px] bg-[#FAF8F3] h-full flex flex-col justify-between p-6 shadow-2xl border-r border-[#153A2B]/10">
             <div>
-              <div className="flex items-center justify-between pb-5 border-b border-[#153A2B]/10">
-                <span className="font-serif text-xl font-bold text-[#153A2B]">
-                  RIBAZ <span className="font-normal text-[#5E432C]">রিবাজ</span>
-                </span>
+            <div className="flex items-center justify-between pb-5 border-b border-[#153A2B]/10">
+                <img src={ribazLogo} alt="RIBAZ - রান্নায় শুদ্ধতা" className="h-12 w-auto object-contain" />
                 <button
                   type="button"
                   onClick={() => setMobileMenuOpen(false)}
