@@ -1,9 +1,9 @@
 @import "tailwindcss";
 
 @theme {
-  --font-sans: "Hind Siliguri", system-ui, -apple-system, sans-serif;
-  --font-serif: "Noto Serif Bengali", "Playfair Display", Georgia, serif;
-  --font-display: "Playfair Display", "Noto Serif Bengali", Georgia, serif;
+  --font-sans: "Noto Sans Bengali", system-ui, -apple-system, sans-serif;
+  --font-serif: "Noto Sans Bengali", "Playfair Display", Georgia, serif;
+  --font-display: "Playfair Display", "Noto Sans Bengali", Georgia, serif;
 
   --color-ribaz-ivory: #FAF8F3;
   --color-ribaz-cream: #F2EDE2;
