@@ -50,7 +50,7 @@ export function Hero({ onShopNow, onViewProducts }: HeroProps) {
                 <button
                   key={category}
                   type="button"
-                  className="w-full px-3 py-2.5 bg-[#153A2B] hover:bg-[#1D4A37] border border-white/10 text-[#FAF8F3] rounded-lg text-sm font-medium transition-colors text-center cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#D99B26]"
+                  className="w-full px-3 py-2.5 bg-[#153A2B] hover:bg-[#1D4A37] border border-white/30 text-[#FAF8F3] rounded-lg text-sm font-medium transition-colors text-center cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#D99B26]"
                 >
                   {category}
                 </button>
