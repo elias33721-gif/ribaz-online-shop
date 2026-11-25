@@ -1,4 +1,3 @@
-import { ArrowRight } from 'lucide-react';
 import { BRAND_CONFIG } from '../data/brandConfig';
 import { SafeImage } from './SafeImage';
 
@@ -8,6 +7,22 @@ interface HeroProps {
 }
 
 export function Hero({ onShopNow, onViewProducts }: HeroProps) {
+  void onShopNow;
+  void onViewProducts;
+
+  const categories = [
+    'সকল পণ্য',
+    'মসলা',
+    'চাপাতা',
+    'তেল',
+    'পুষ্টিকর খাবার',
+    'সিলেটি লেবু',
+    'আজকের অফার',
+    'কম্বো প্যাক',
+    'ক্যাম্পেইন',
+    'অন্যান্য পণ্য',
+  ];
+
   return (
     <section
       id="top"
@@ -15,7 +30,6 @@ export function Hero({ onShopNow, onViewProducts }: HeroProps) {
     >
       <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-stretch">
-          {/* Left Editorial Column */}
           <div className="lg:col-span-6 flex flex-col justify-center space-y-6">
             <div className="flex items-center gap-2 text-xs sm:text-sm font-medium text-[#D99B26] tracking-wide">
               <span>রিবাজ (RIBAZ)</span>
@@ -31,23 +45,16 @@ export function Hero({ onShopNow, onViewProducts }: HeroProps) {
               {BRAND_CONFIG.heroSubtitle}
             </p>
 
-            <div className="pt-2 flex flex-wrap items-center gap-3.5">
-              <button
-                type="button"
-                onClick={onShopNow}
-                className="inline-flex items-center gap-2.5 px-6 py-3.5 bg-[#C88A1E] hover:bg-[#B47A16] text-[#FAF8F3] rounded-lg text-sm sm:text-base font-semibold transition-colors whitespace-nowrap shrink-0 cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#D99B26]"
-              >
-                <span>এখনই কেনাকাটা করুন</span>
-                <ArrowRight className="w-4 h-4" />
-              </button>
-
-              <button
-                type="button"
-                onClick={onViewProducts}
-                className="inline-flex items-center px-6 py-3.5 bg-transparent hover:bg-white/10 text-[#FAF8F3] border border-[#FAF8F3]/30 rounded-lg text-sm sm:text-base font-medium transition-colors whitespace-nowrap shrink-0 cursor-pointer"
-              >
-                আমাদের পণ্য দেখুন
-              </button>
+            <div className="pt-2 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-2 gap-2 max-w-xl">
+              {categories.map((category) => (
+                <button
+                  key={category}
+                  type="button"
+                  className="w-full px-3 py-2.5 bg-[#153A2B] hover:bg-[#1D4A37] border border-white/10 text-[#FAF8F3] rounded-lg text-sm font-medium transition-colors text-center cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#D99B26]"
+                >
+                  {category}
+                </button>
+              ))}
             </div>
 
             <div className="pt-4 border-t border-white/10 flex flex-wrap items-center gap-x-5 gap-y-2 text-xs sm:text-sm text-[#FAF8F3]/75">
@@ -61,7 +68,6 @@ export function Hero({ onShopNow, onViewProducts }: HeroProps) {
             </div>
           </div>
 
-          {/* Right Atmospheric Visual Frame */}
           <div className="lg:col-span-6">
             <div className="relative h-full min-h-[280px] sm:min-h-[380px] lg:min-h-[460px] rounded-2xl overflow-hidden border border-white/10 shadow-xl">
               <SafeImage
